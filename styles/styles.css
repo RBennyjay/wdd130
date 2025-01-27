@@ -1,56 +1,78 @@
+:root {
+    --primary-color: darkblue; /* Main color for headings and navigation */
+    --secondary-color: white; /* Text color for links */
+    --border-color: black; /* General border color */
+    --box-shadow: 0 0 30px gray; /* Shadow effect for images */
+    --aside-bg-color: #eee; /* Background color for the sidebar */
+    --aside-text-color: #333; /* Text color for the sidebar */
+    --default-padding: 10px; /* Default padding for elements */
+    --image-width: 150px; /* Standard image width */
+    --aside-width: 20rem; /* Sidebar width */
+    --aside-margin: 1rem; /* Sidebar margin */
+    --heading-font: 'Montserrat', Helvetica, sans-serif; /* Font for headings */
+    --main-max-width: 840px; /* Maximum width for the main content area */
+    --footer-margin-top: 15px; /* Footer top margin */
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--default-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 
 img {
-    width: 150px;
-    height:auto;
-    border: 1px solid black;
+    width: var(--image-width);
+    height: auto;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 
 p {
-    padding: 10px;
+    padding: var(--default-padding);
 }
 
 main {
-    max-width: 840px;
+    /* max-width: 840px; */
+    max-width: var(--main-max-width);
 }
+
 aside {
-    width: 20rem;
-    margin:1rem;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
     border: 1px solid rgb(0 0 0 / 0.2); /*1*/
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    padding: var(--default-padding);
+    background-color: var(--aside-bg-color);
+    color: var(--aside-text-color);
     text-align: center;
 }
-aside img{
-    width: 150px;
-    height: auto;
-}
-main img{
-    width: 150px;
-    height: auto;
 
+aside img {
+    width: var(--image-width);
+    height: auto;
 }
+
+main img {
+    width: var(--image-width);
+    height: auto;
+}
+
 p {
     padding: 0;
 }
+
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
