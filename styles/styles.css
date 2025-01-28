@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root {
     --primary-color: darkblue; /* Main color for headings and navigation */
     --secondary-color: white; /* Text color for links */
@@ -14,6 +21,37 @@
     --footer-margin-top: 15px; /* Footer top margin */
 }
 
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 /.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+ }
+
+ ul {
+    list-style-type: disc; /* Use a bullet (disc) for the list */
+    padding-left: 1.5em; /* Add space between the bullet and text */
+}
+
+ul li {
+    margin-bottom: 0.5em; /* Add spacing between each list item */
+}
+
+ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: darkblue; /* Customize link color */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Add a hover effect */
+}
+
+ul li a:hover {
+    color: darkred; /* Change color on hover */
+}
+
+
 nav {
     background-color: var(--primary-color);
     padding: var(--default-padding);
@@ -23,12 +61,25 @@ nav a {
     color: var(--secondary-color);
     display: block;
     padding: 20px;
+    
 }
 
 h1 {
     color: var(--primary-color);
     font-family: var(--heading-font);
+    margin-bottom: 20px; /* Adds space below the heading */
+    margin-top: 20px; /* Adds space above the heading */
 }
+/* 
+img {
+    width: var(--image-width);
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+} */
+
+
 
 img {
     width: var(--image-width);
@@ -36,10 +87,17 @@ img {
     border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: var(--box-shadow);
+   
+    margin: 0 0 var(--default-padding) var(--default-padding); /* Adds space around the image */
+}
+
+#pic {
+    float: right; /* Aligns the image to the right */
 }
 
 p {
     padding: var(--default-padding);
+    text-align: justify; /* Justifies the text */
 }
 
 main {
@@ -48,13 +106,14 @@ main {
 }
 
 aside {
-    width: var(--aside-width);
+    /* width: var(--aside-width); */
     margin: var(--aside-margin);
     border: 1px solid rgb(0 0 0 / 0.2); /*1*/
     padding: var(--default-padding);
     background-color: var(--aside-bg-color);
     color: var(--aside-text-color);
     text-align: center;
+    width: 20em;
 }
 
 aside img {
@@ -69,6 +128,7 @@ main img {
 
 p {
     padding: 0;
+    margin-bottom: 16px; /* Adds space below each paragraph */
 }
 
 footer {
