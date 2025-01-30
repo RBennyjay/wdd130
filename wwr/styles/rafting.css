@@ -171,6 +171,16 @@ section h2 {
     }
 }
 
+.happy-client-container {
+    text-align: center;
+}
+article {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
 
 footer {
     background-color: var(--primary-color); 
