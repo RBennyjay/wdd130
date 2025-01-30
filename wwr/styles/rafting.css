@@ -208,13 +208,18 @@ section p {
 
 /* Center-align the History section text */
 section#history p {
-    text-align: center; /* Centers the text */
-    max-width: 800px; /* Keeps the text readable */
-    margin: 0 auto; /* Centers the paragraph block */
-    font-size: 18px; /* Ensures consistency */
-    line-height: 1.6; /* Improves readability */
+    text-align: center; 
+    margin: 0 auto; 
+    font-size: 18px; 
+    line-height: 1.6; 
 }
 
-
-
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    text-align: center; 
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
 
