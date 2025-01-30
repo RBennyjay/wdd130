@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #006868; 
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --heading-color: #222;
+    --background-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Remove underlines from social media image links */
+.social-media a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color); /* Teal header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+section {
+    margin-top: 30px;
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+/* Gallery Section */
+.gallery {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery-images figure {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9; 
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.gallery-images figcaption {
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Adjust the two images on the second row to take up more space and balance the row */
+@media (min-width: 768px) {
+    .gallery-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Make the two images on the second row take up half of the row each */
+    .gallery-images figure:nth-child(4),
+    .gallery-images figure:nth-child(5) {
+        grid-column: span 1.5; 
+    }
+
+    /* Space out the images on the second row */
+    .gallery-images figure:nth-child(4) {
+        margin-right: 15px; 
+    }
+
+    .gallery-images figure:nth-child(5) {
+        margin-left: 15px; 
+    }
+}
+
+/* For very small screens, display images in a single column */
+@media (max-width: 480px) {
+    .gallery-images {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+footer {
+    background-color: var(--primary-color); 
+    color: white; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p, footer .social-links, footer .social-links a {
+    color: white; 
+}
+
+footer .social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ensure all section headings are centered */
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Ensure paragraph text is justified and evenly spread */
+section p {
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 800px; 
+    margin: 0 auto 20px auto; 
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+/* Center-align the History section text */
+section#history p {
+    text-align: center; /* Centers the text */
+    max-width: 800px; /* Keeps the text readable */
+    margin: 0 auto; /* Centers the paragraph block */
+    font-size: 18px; /* Ensures consistency */
+    line-height: 1.6; /* Improves readability */
+}
+
+
+
+
