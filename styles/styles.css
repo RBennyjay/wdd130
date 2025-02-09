@@ -73,21 +73,21 @@ main {
     grid-column: 2/3;
     margin: 1rem;
    }
-   
-.temple-list {
+
+
+.box {
     background-color: var(--aside-bg-color);
-    color: var(--aside-text-color);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    width: 100%;
+    color: var(--aside-text-color);    
+    padding: 10px;
+    border: 1px solid #ddd;
     margin-top: 10px;
     padding-left: 30px;
+    border: 1px solid #ccc;
     }
 
 /* Styling for sidebar */
 aside {
-    width: var(--aside-width);
+    /* width: var(--aside-width); */
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -96,6 +96,12 @@ aside {
     padding: var(--default-padding);
     text-align: center;
     border: 1px solid rgb(0 0 0 / 0.2);
+
+
+    
+    width: 100%; /* Override the fixed width */
+    max-width: var(--aside-width);
+    
     }
 
 /* Footer styling */
