@@ -47,13 +47,13 @@ nav a {
 
 /* Add bottom border to h1 */
 h1 {
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-bottom: 2px solid var(--primary-color);
-    text-align: center;
-    padding-bottom: 10px; 
+    color:var(--primary-color);
+    font-family:var(--heading-font);
+    margin-bottom:20px;
+    margin-top:20px;
+    border-bottom:2px solid var(--primary-color);
+    text-align:center;
+    padding-bottom:10px; 
     }
 
 /* Grid layout for main content and sidebar */
@@ -88,6 +88,7 @@ main {
 /* Styling for sidebar */
 aside {
     /* width: var(--aside-width); */
+    max-width: var(--aside-width);
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -96,12 +97,6 @@ aside {
     padding: var(--default-padding);
     text-align: center;
     border: 1px solid rgb(0 0 0 / 0.2);
-
-
-    
-    width: 100%; /* Override the fixed width */
-    max-width: var(--aside-width);
-    
     }
 
 /* Footer styling */
