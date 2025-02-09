@@ -1,138 +1,110 @@
+/* Ensure max-width for header, footer, and grid */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    }
 
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    }
 
 :root {
-    --primary-color: darkblue; /* Main color for headings and navigation */
-    --secondary-color: white; /* Text color for links */
-    --border-color: black; /* General border color */
-    --box-shadow: 0 0 30px gray; /* Shadow effect for images */
-    --aside-bg-color: #eee; /* Background color for the sidebar */
-    --aside-text-color: #333; /* Text color for the sidebar */
-    --default-padding: 10px; /* Default padding for elements */
-    --image-width: 150px; /* Standard image width */
-    --aside-width: 20rem; /* Sidebar width */
-    --aside-margin: 1rem; /* Sidebar margin */
-    --heading-font: 'Montserrat', Helvetica, sans-serif; /* Font for headings */
-    --main-max-width: 840px; /* Maximum width for the main content area */
-    --footer-margin-top: 15px; /* Footer top margin */
-}
+    --primary-color: steelblue;
+    --secondary-color: white;
+    --border-color: black;
+    --box-shadow: 0 0 30px gray;
+    --default-padding: 10px;
+    --image-width: 150px;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --main-max-width: 840px;
+    --footer-margin-top: 15px;
+    --aside-bg-color: #e5e5e5;
+    --aside-text-color: #000;
+    }
 
-/* Class Selectors */
-
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /.1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
- }
-
- ul {
-    list-style-type: disc; /* Use a bullet (disc) for the list */
-    padding-left: 1.5em; /* Add space between the bullet and text */
-}
-
-ul li {
-    margin-bottom: 0.5em; /* Add spacing between each list item */
-}
-
-ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: darkblue; /* Customize link color */
-    font-weight: bold; /* Make links bold */
-    transition: color 0.3s; /* Add a hover effect */
-}
-
-ul li a:hover {
-    color: darkred; /* Change color on hover */
-}
-
-
+/* Navigation styling */
 nav {
-    background-color: var(--primary-color);
-    padding: var(--default-padding);
-}
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
 
 nav a {
-    color: var(--secondary-color);
     display: block;
-    padding: 20px;
-    
-}
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    }
 
+/* Add bottom border to h1 */
 h1 {
     color: var(--primary-color);
     font-family: var(--heading-font);
-    margin-bottom: 20px; /* Adds space below the heading */
-    margin-top: 20px; /* Adds space above the heading */
-}
-/* 
-img {
-    width: var(--image-width);
-    height: auto;
-    border: 1px solid var(--border-color);
-    padding: 2px;
-    box-shadow: var(--box-shadow);
-} */
+    margin-bottom: 20px;
+    margin-top: 20px auto;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+    padding-bottom: 10px; 
+    }
 
-
-
-img {
-    width: var(--image-width);
-    height: auto;
-    border: 1px solid var(--border-color);
-    padding: 2px;
-    box-shadow: var(--box-shadow);
-   
-    margin: 0 0 var(--default-padding) var(--default-padding); /* Adds space around the image */
-}
+/* Grid layout for main content and sidebar */
+.grid {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    align-items: center;
+    gap: 1rem;
+    }
 
 #pic {
-    float: right; /* Aligns the image to the right */
-}
-
-p {
-    padding: var(--default-padding);
-    text-align: justify; /* Justifies the text */
-}
-
+    float: right;
+    margin-left: 20px;
+    }
+/* Styling for main content */
 main {
-    /* max-width: 840px; */
-    max-width: var(--main-max-width);
-}
-
-aside {
-    /* width: var(--aside-width); */
-    margin: var(--aside-margin);
-    border: 1px solid rgb(0 0 0 / 0.2); /*1*/
-    padding: var(--default-padding);
+    grid-column: 2/3;
+    margin: 1rem;
+   }
+   
+.temple-list {
     background-color: var(--aside-bg-color);
     color: var(--aside-text-color);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 30px;
+    }
+
+/* Styling for sidebar */
+aside {
+    width: var(--aside-width);
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: var(--aside-bg-color);
+    color: var(--aside-text-color);
+    padding: var(--default-padding);
     text-align: center;
-    width: 20em;
-}
+    border: 1px solid rgb(0 0 0 / 0.2);
+    }
 
-aside img {
-    width: var(--image-width);
-    height: auto;
-}
-
-main img {
-    width: var(--image-width);
-    height: auto;
-}
-
-p {
-    padding: 0;
-    margin-bottom: 16px; /* Adds space below each paragraph */
-}
-
+/* Footer styling */
 footer {
     margin-top: var(--footer-margin-top);
     border-top: 1px solid var(--border-color);
     text-align: center;
-}
+    }
+
+
+
+

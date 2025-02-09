@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ebenezer John | WDD 130</title>
-    <meta name="description" content="Ebenezer John's BYU- Idaho WDD 130 course home page">
+    <meta name="description" content="Ebenezer John's BYU-Idaho WDD 130 course home page">
     <meta name="author" content="Ebenezer John">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -12,30 +12,43 @@
     <header>
         <nav>
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#">Rafting Website</a>
+            <a href="#">Siteplan</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
         </nav>
     </header>
-    <main>
-        <h1>Ebenezer John | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hello , my name is Ebenezer John" id="pic" width="200">
-        <p>Hello, my name is <b>Ebenezer John</b> and I am from Lagos, Nigeria. I enjoy exploring new ideas, learning about technology, 
-            and finding creative solutions to challenges. In my free time, I love engaging with people, sharing knowledge, and discovering ways to make a positive impact in my community.</p>
-        <ul>
-            <li><a href="https://churchofjesuschristtemples.org/aba-nigeria-temple" target="_blank">Aba Nigeria Temple</a> </li>
-            <li><a href="https://churchofjesuschristtemples.org/snowflake-arizona-temple" target="_blank">Snowflake Arizona Temple</a> </li>
-            <li><a href="https://churchofjesuschristtemples.org/preston-england-temple" target="_blank">Preston England Temple</a> </li>
-        </ul>
-    </main>
-    <aside>
-        <h2>Lagos</h2>
-        <img src="images/lagos.webp" alt="Lagos blue rail">
-        <p>Lagos, Nigeria, is the country’s largest city and economic hub, located along the southwestern coast. Known for its vibrant culture, bustling markets, and dynamic nightlife, Lagos is home to over 20 million people, making it one of the fastest-growing cities in the world.</p>
-    </aside>
+
+    <div class="grid">  <!-- Wrapping main and aside in a div.grid -->
+        <main>
+            <h1>Ebenezer John | WDD 130</h1>
+            <img src="images/profile.jpg" alt="Hello, my name is Ebenezer John" id="pic" width="200">
+            <p>Hello, my name is <b>Ebenezer John</b> and I am from Lagos, Nigeria. I enjoy exploring new ideas, learning about technology, 
+                and finding creative solutions to challenges. In my free time, I love engaging with people, sharing knowledge, and discovering ways to make a positive impact in my community. </p>
+            
+
+                <div class="temple-list">
+            <ul>
+                <li><a href="https://churchofjesuschristtemples.org/aba-nigeria-temple" target="_blank">Aba Nigeria Temple</a> </li>
+                <li><a href="https://churchofjesuschristtemples.org/snowflake-arizona-temple" target="_blank">Snowflake Arizona Temple</a> </li>
+                <li><a href="https://churchofjesuschristtemples.org/preston-england-temple" target="_blank">Preston England Temple</a> </li>
+            </ul>
+
+            </div>
+        
+        </main>
+
+        <aside>
+            <h2>Lagos</h2>
+            <img src="images/lagos.webp" alt="Lagos blue rail">
+            <p>Lagos, Nigeria, is the country’s largest city and economic hub, located along the southwestern coast. Known for its vibrant culture, bustling markets, and dynamic nightlife, Lagos is home to over 20 million people, making it one of the fastest-growing cities in the world.</p>
+        </aside>
+    </div> <!-- End of grid -->
+
     <footer>
        <p>&copy; 2025 &#10070; Ebenezer John &#10070; Lagos, Nigeria</p> 
     </footer>
 </body>
-<!-- page last updated 26th jan 2025 -->
-
+<!-- Page last updated 26th Jan 2025 -->
 </html>
+
