@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, Roboto, sans-serif;
+    font-size: 1.rem;
+    color: #333;
+    background: #fff;
+  }
+
+  header {
+    margin: 0 auto;
+    width: 659px;
+  }
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+   }
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+
+label, input, button, select, textarea {
+           font-family: Lato, Roboto, sans-serif;
+}
+
+label {
+    color: #333;
+    text-align:right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type ="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+} 
+
+button {
+    margin: 1rem auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding:0.75rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 150px;
+    text-align: center;
+    }
+
+button:hover {
+    background-color: navy;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #555;
+    border-top: 1px solid #ccc;
+    font-family: Lato, Roboto, sans-serif;
+    font-size: 1rem;
+}
+
+#feedback_list {
+     text-align: center;
+     margin-left: 60px;
+     margin-top: 20px;
+}
+.column1 {
+    margin-bottom: 10px;
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+   }
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+    }
