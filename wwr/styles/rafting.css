@@ -96,6 +96,8 @@ header {
     
  }
 
+ 
+
  .logo {
     display: flex;
     align-items: center;
@@ -168,7 +170,7 @@ footer {
     width: 100%;
     background-color: var(--primary-color); 
     color: var(--text-color);
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -184,8 +186,10 @@ footer {
     background-color: var(--primary-color); 
     color: var(--text-color);
     text-align: center;
-    padding: 20px 0;
-    font-size: medium;
+    padding: 5px 0;
+    font-size: 12px;
+    text-wrap: wrap;
+   
 
     }
 
@@ -808,14 +812,19 @@ h2 {
     box-sizing: border-box; 
 }
 
-/* Aligning radio buttons properly */
+
+.radio-group {
+    display: flex; 
+    justify-content: flex-start;
+}
+
 .radio-group label {
     display: flex;
-    align-items: center; /
-    justify-content: flex-start; 
+    align-items: center;    
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 10px;
+   
 }
 
 .radio-group input[type="radio"] {
@@ -930,6 +939,7 @@ label, input, button, select, textarea {
     margin-top: 20px;
     font-size: 20px;
     font-family: Lato, Roboto, sans-serif;
+    margin-left: 45px;
 }
 
 h4 {
@@ -964,7 +974,29 @@ h4 {
     width: 100%;
 }
 
+.contact-header {
 
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid #ccc;
+    padding: 10px 10px;
+    justify-content:flex-start;
+    padding: 10px 20px;
+    gap: 10px; 
+   
+
+}
+
+#mycontact {
+    color: #f4f4f4;
+    font-size: 35px;
+    
+}
 
 
 

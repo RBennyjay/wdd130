@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Get in touch with Rapids Rafting LLC for inquiries, bookings, and adventure details. Contact us via phone, email, or visit our location today!">
-   <meta name="author" content="Rapids Rafting LLC">
-    <title>Contact Rapids Rafting LLC</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Experience the thrill of the rapids with Rapids Rafting LLC! Offering guided whitewater rafting trips for adventurers of all levels. Join us for unforgettable memories on the best rapids.">
+    <meta name="author" content="Rapids Rafting LLC">
+    <title>Rapids Rafting LLC - Contact Us</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
-    </head>
+    <link rel="preload" href="style.css" as="style">
+</head>
 <body>
     <header>
         <img src="images/rapids.webp" alt="Rapids Rafting LLC Logo">
@@ -44,10 +46,10 @@
                     </section>
                 </div>
             </div>
-                <header>
-                <h1>Contact Us:</h1>
+            <section class="contact-header">
+                <h2 id="mycontact">Contact Us:</h2>
                 <p id="contact_address">📍# 6 Opebi Road, Ikeja, Lagos - Nigeria | 📞 (123) 456-7890 | 📧 contact@rapidsrafting.com</p>
-            </header>
+            </section>
             
             
             
@@ -71,20 +73,21 @@
 
 
     <div id="contact" class="contact-area">
-        <!-- <div class="contact-inner area-padding"> -->
+        <div class="contact-inner area-padding">
             <div class="container">
                
+
                 <div class="ride-with-us-wrapper">
                     <section class="ride-with-us">
-               
                 <h1>Ride the rapids with us! Reach out now to start your next thrilling adventure  🌊🚀.</h1>
-           </section>
+            </section>
+        </div>
                 <div class="row">
                     <div class="col-md-6">
                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.7099600926506!2d3.3551095649429152!3d6.5946176718936735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9323ad2aa55b%3A0x8aa28ee6ceea5929!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2sng!4v1739472266964!5m2!1sen!2sng"></iframe>
                     </div>
 
-                  
+                    <main>
                     <div class="col-md-6">
                         <div class="form contact-form">
                             <form>
@@ -122,7 +125,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group mt-3">
-                                    <label for="message">Your Message:</label>
+                                    <label for="message">Your Message</label>
                                     <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="form-group mt-3">
@@ -130,11 +133,12 @@
                                     <label for="subscribe" id="sub_news">Please subscribe me to the monthly newsletter</label>
                                     <input type="checkbox" name="subscribe" id="subscribe">
                                 </div>
+                                <button type="submit" class="btn btn-info form-control" name="submit" id="submit">Send Message</button>
                                 
-                            </Fieldset>
-                               <button type="submit" class="btn btn-primary" name="submit" id="submit">Send Message</button>
+                            </fieldset>
+                               
                             </form>
-                            </main>
+                            <main></main>
                         </div>
                     </div>
                 </div>
@@ -151,13 +155,13 @@
         
         <nav class="social-links">
             <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook.webp" alt="Facebook" width="40" height="40">
+                <img src="images/facebook.webp" alt="Facebook Logo" width="40" height="40">
             </a>
             <a href="https://www.twitter.com/" target="_blank">
-                <img src="images/twitter.webp" alt="Twitter" width="40" height="40">
+                <img src="images/twitter.webp" alt="Twitter Logo" width="40" height="40">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram.webp" alt="Instagram" width="40" height="40">
+                <img src="images/instagram.webp" alt="Instagram lg" width="40" height="40">
             </a>
         </nav>
         
