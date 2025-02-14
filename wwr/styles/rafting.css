@@ -937,7 +937,7 @@ h4 {
     color: #004466;
 }
 
-#happy_employee {
+.happy_employee {
     text-align: center;
     color: #004466;
 }
@@ -948,8 +948,21 @@ h4 {
     border: none;
 }
 
+.ride-with-us {
+    width: 100vw; 
+    max-width: 100%; 
+    margin: 0; 
+    
+}
 
+.ride-with-us h1 {
+    color: #004466;
 
+}
+
+.ride-with-us-wrapper {
+    width: 100%;
+}
 
 
 
