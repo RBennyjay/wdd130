@@ -181,15 +181,6 @@ footer {
     margin-top: 40px;
 }
 
-
-.gallery-images figure {
-    margin: 0;
-    padding: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #f9f9f9;
-}
-
 .gallery-images figcaption {
     text-align: center;
     color: var(--primary-color);
@@ -234,16 +225,6 @@ figcaption {
     align-items: center;
     margin-top: 20px;
     padding: 0 10px;
-}
-
-/* Style each adventure figure */
-.adventure-gallery figure {
-    margin: 0;
-    padding: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    text-align: center;
 }
 
 /* Style the adventure images */
@@ -341,7 +322,6 @@ figcaption {
     text-align: justify;
 }
 
-
 /* Image Section */
 .nav-image {
     flex: 0.2;
@@ -362,9 +342,6 @@ figcaption {
     margin: 20px;
   }
 
-
-
-
 .nav-container {
     width: auto;
     display: flex;
@@ -375,12 +352,6 @@ figcaption {
     height: 250px;
 
 }
-/* Text Section */
-.nav-text {
-    flex: 0.8;
-    font-size: 1.2rem;
-    text-align: justify;
-   }
 
 /* Heading Styling */
 .nav-text h2 {
@@ -451,12 +422,6 @@ header img {
     margin-bottom: 40px;
 }
 
-.contact-map iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 /* Contact Form */
 .contact-form {
     background: #f9f9f9;
@@ -465,25 +430,12 @@ header img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form h2 {
-    text-align: center;
-    color: #c23c33;
-    margin-bottom: 20px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
 .contact-form label {
     font-size: 1rem;
     color: #444;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -495,6 +447,11 @@ header img {
 .contact-form textarea {
     height: 150px;
     resize: vertical;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 /* Happy Clients Section */
