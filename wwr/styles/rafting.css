@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #004466;
     --text-color: white;
@@ -5,18 +6,12 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: #f4f4f4;
-}
+    background-color: #ffffff;
+    color: #333333;
+ }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 20px 0;
-    text-align: center;
-}
 
  nav {
     display: flex;
@@ -44,25 +39,9 @@ nav a {
     z-index: 2;
 }
 
-nav a:hover {
-    color: var(--accent-color);
-    font-weight: 700;
-    text-decoration: underline;
-}
-
 .main-content {
     padding: 20px;
 }
-
-.history-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 
 .gallery-images img {
     width: 100%;
@@ -83,12 +62,9 @@ header {
     justify-content: flex-start; 
     padding: 10px 20px;
     gap: 10px; 
-    
- }
+    }
 
- 
-
- .logo {
+.logo {
     display: flex;
     align-items: center;
     flex-grow: 0; 
@@ -100,20 +76,10 @@ header {
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     margin-left: auto; 
     gap: 20px; 
     margin-right: 0; 
-    
-}
-
-
-/* Logo  */
-.logo img {
-    margin: 0;
-    width: 64px; 
-    height: auto;
-    display: block;
 }
 
 
@@ -125,16 +91,18 @@ header {
 
 .navigation a {
     display: block;
-    color: var(--text-color);
+    /* color: var(--text-color); */
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.6rem;
+    color: #ffffff;
+
 }
 
 .navigation a:hover {
-    color: tomato;
     font-weight: 700;
     text-decoration: underline;
+    color:#ffcc00;
 }
 
 /* Hero Section */
@@ -149,10 +117,8 @@ header {
 h1 {
     text-align: center;
     font-size: 3rem;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     color: var(--text-color);
-   
- 
 }
 
 /* Footer */
@@ -164,7 +130,7 @@ footer {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    
+   
  }
 
  footer a {
@@ -177,8 +143,13 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 5px 0;
-    font-size: 12px;
+    font-size: 16px;
     text-wrap: wrap;
+    justify-items: center;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
    
 
     }
@@ -210,14 +181,6 @@ footer {
     margin-top: 40px;
 }
 
-.gallery-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-    position: relative;
-}
 
 .gallery-images figure {
     margin: 0;
@@ -225,13 +188,6 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     background-color: #f9f9f9;
-}
-
-.gallery-images img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
 }
 
 .gallery-images figcaption {
@@ -244,7 +200,7 @@ footer {
 /* Paragraph Styling */
 p {
     font-size: 20px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     color:black;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -252,7 +208,7 @@ p {
 }
 
 figcaption {
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 /* Adventures Section */
@@ -266,7 +222,7 @@ figcaption {
     font-weight: bold;
     color: teal;
     margin-bottom: 20px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 /* Layout for adventure images */
@@ -312,6 +268,10 @@ figcaption {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
 }
 
 .history-heading {
@@ -381,12 +341,6 @@ figcaption {
     text-align: justify;
 }
 
-/* Heading Styling */
-.nav-text h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
 /* Image Section */
 .nav-image {
@@ -396,32 +350,10 @@ figcaption {
     justify-content: center;
 }
 
-.nav-image img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 5px;
-}
+
 
 /* History Section */
-.history {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 60px 0;
-}
 
-.history h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.history p {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 600px;
-    margin: 10px auto;
-}
 .outer-container {
     width: auto;
     height: 400px;
@@ -430,12 +362,6 @@ figcaption {
     margin: 20px;
   }
 
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 
@@ -468,7 +394,7 @@ figcaption {
     color:white;
     text-align: center;
     font-size:60px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     background-color: grey;
 }
 
@@ -487,37 +413,10 @@ figcaption {
     border-radius: 5px;
 }
 
-/* History Section */
-.history {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 60px 0;
-    
-}
-
-.history h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.history p {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 600px;
-    margin: 10px auto;
-}
 
 header img {
     margin-left: 150px !important;
 }
-
-
-#foot_text {
-    margin-left: 170px !important;
-}
-
-
 
 
 /* General Page Styling */
@@ -590,6 +489,7 @@ header img {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    
 }
 
 .contact-form textarea {
@@ -697,11 +597,7 @@ h2 {
     flex-grow: 1; 
     display: flex; 
     flex-direction: column; 
-}
-
-/* Spacing for form groups */
-.contact-form .form-group {
-    margin-bottom: 15px;
+ 
 }
 
 /* Input fields and textarea */
@@ -753,18 +649,22 @@ h2 {
 }
 /* Submit button */
 .contact-form button {
-    background: #01b1d7;
     border: none;
-    padding: 10px;
-    color: #fff;
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
     width: 100%;
+    background-color: #0073e6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+
 }
 
 .contact-form button:hover {
-    background: navy;
+    /* background: navy; */
+    background-color: #005bb5;
+
 }
 
 legend {
@@ -774,7 +674,7 @@ legend {
 }
 
 label, input, button, select, textarea {
-    font-family: Lato, Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 .employee-profiles {
@@ -786,6 +686,7 @@ label, input, button, select, textarea {
     margin: 20px auto; 
     max-width: 1200px;
     padding: 0 20px; 
+
 }
 
 .employee-profile {
@@ -813,7 +714,7 @@ label, input, button, select, textarea {
     color: white;
     margin-top: 20px;
     font-size: 20px;
-    font-family: Lato, Roboto, sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     margin-left: 45px;
 }
 
@@ -865,7 +766,7 @@ h4 {
     gap: 10px; 
 }
 
-#mycontact {
+#contact_user {
     color: #f4f4f4;
     font-size: 35px;
     
