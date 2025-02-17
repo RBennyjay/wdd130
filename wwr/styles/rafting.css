@@ -952,15 +952,21 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
-.trip-item p { 
-    text-align: left;
+.trip-item p, ul li{ 
+    text-align:justify;
     margin-bottom: 0.5rem;
+    font-family: 'Lato', 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 .trip-table-container { 
     overflow-x: auto;
 }
 
+.trip-table-container h2 {
+    text-align: center;
+    padding-bottom:20px ;
+}
 .trip-table { 
     width: 100%;
     border-collapse: collapse;
