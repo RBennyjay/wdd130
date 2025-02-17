@@ -210,7 +210,7 @@ figcaption {
 .adventures h2 {
     font-size: 28px;
     font-weight: bold;
-    color: teal;
+    color:navy;
     margin-bottom: 20px;
     font-family: 'Lato', 'Roboto', sans-serif;
 }
@@ -258,7 +258,7 @@ figcaption {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: teal;
+    color:navy;
     width: 100%;
     margin-bottom: 20px;
     position: relative;
@@ -727,7 +727,7 @@ h4 {
 /* index page */
 
 
-/* Hero Section */
+
 .hero-home {
     position: relative; 
     overflow: hidden; 
@@ -765,8 +765,7 @@ h4 {
     position: relative;
     margin: 20px;
     
-   
-    
+     
   }
    
 .hero-title h1 {
@@ -799,31 +798,50 @@ h4 {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
-    border: 1px solid #ced4da; /* Light gray border */
+    border: 1px solid #ced4da; 
 }
 
+
 .newsletter-home button {
+    display: inline-block;
     background-color: #007bff;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;  /* Makes it rounded */
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
     border: none;
     cursor: pointer;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
+.newsletter-home button:hover {
     background-color: #0056b3;
 }
 
 
+/* Style for the Explore Our Trips Button */
+.cta-button {
+    display: inline-block;
+    background-color: #007bff; 
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    background-color: #0056b3; 
+}
 
 /* Rafting Info Section */
 .rafting-info {
@@ -832,7 +850,7 @@ h4 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
 }
 
@@ -851,31 +869,25 @@ h4 {
 }
 
 .grid-item p {
-    text-align: left; /* Align text to the left within grid items*/
+    text-align: left; 
 }
-
-
-
 
 /* Signup and CTA Section */
 .signup-cta {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: #f8f9fa; /* Light gray background */
-    margin: 2rem 0; /* Add margin top and bottom */
-    border-top: 1px solid #ddd; /* Add top border */
-    border-bottom: 1px solid #ddd; /* Add bottom border */
+    background-color: #f8f9fa; 
+    margin: 2rem 0; 
+    border-top: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .signup-cta h2 {
     color:black;
 }
 
-
-
-/* Hero Section - Remove background from writeup */
 .hero-content-home {
     position: absolute;
     top: 50%;
@@ -884,13 +896,97 @@ h4 {
     color: white;
     text-align: center;
     padding: 2rem;
-    /* Remove the background color */
-    background-color: transparent; /* Make the background transparent */
-    /* Add a subtle text shadow for readability if needed */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional text shadow */
+    
+    background-color: transparent;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     width: 100%;
 }
 
 
+.page-cta-button {
+    display: inline-block;
+    padding: 1rem 2rem; 
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; 
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
 
+.page-cta-button:hover {
+    background-color: #0056b3;
+}
 
+/* Trips Page Specific Styles */
+.trips-contact-cta { 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.trip-descriptions-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trip-item { 
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+   color: black;
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+.trip-item img { 
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.trip-item h3 { 
+    margin-bottom: 0.5rem;
+}
+
+.trip-item p { 
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.trip-table-container { 
+    overflow-x: auto;
+}
+
+.trip-table { 
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.trip-table th, .trip-table td { 
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.trip-table th { 
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.trip-table tr:nth-child(even) { 
+    background-color: #f9f9f9;
+}
+
+.trips-contact-cta p {
+    text-align: center;
+} 
+
+.trip-item ul li {
+    align-items: center;
+    text-align: left;
+}
